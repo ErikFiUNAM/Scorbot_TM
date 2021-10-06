@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="epm01" on="09/10/21||00:32:29" using="Simscape Multibody Link Version 7.0" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="Scorbot.iam" uid="Scorbot.iam_{8CA5CE92-4A15-E9B0-4E18-40A40F660489}" version="{86A723B8-4404-A40C-FC94-71E4AA3C92E3}">
+<AssemblyFile name="Scorbot.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Base:1" grounded="true" uid="Base:1" entityUid="Base.ipt_{4DB48909-460F-B737-7D26-97AC40A842AC}">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-4.454497327904674 6.6838449243901881 -9.75</Translation>
+</Transform>
+</Instance>
+<Instance name="Cintura:1" uid="Cintura:1" entityUid="Cintura.ipt_{E5EE0E65-44FC-9D45-B3ED-8DBE818816AE}">
+<Transform>
+<Rotation>1.0000000000000007 0 0 0 2.1694024351640001e-16 -1.0000000000000007 0 1 2.1694024351639983e-16</Rotation>
+<Translation>-13.67072289289511 11.300103377243408 11.749999999999996</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon1:1" uid="Eslabon1:1" entityUid="Eslabon1.ipt_{54F1D12B-4C37-9790-92B0-149A98EAF21A}">
+<Transform>
+<Rotation>5.0063872653034079e-15 -0.99999999999999978 -2.8770268615724231e-16 -5.363486596205067e-16 -2.7255420004380953e-16 0.99999999999999989 -0.99999999999999989 -5.0133261592073151e-15 -5.3611169196170059e-16</Rotation>
+<Translation>-2.2707228928955407 -7.1998966227565697 36.949999999999989</Translation>
+</Transform>
+</Instance>
+<Instance name="Eslabon2:1" uid="Eslabon2:1" entityUid="Eslabon2.ipt_{A0A173B1-403E-DCE0-612C-CC95C21C703D}">
+<Transform>
+<Rotation>1.0000000000000002 -9.8682063503410618e-15 8.4094518941228134e-16 8.4094518941231072e-16 3.0341134973682974e-15 -1.0000000000000002 9.9237175015723133e-15 1.0000000000000002 3.0341134973683061e-15</Rotation>
+<Translation>8.7292771071043251 -7.1998966227565289 47.950000000000095</Translation>
+</Transform>
+</Instance>
+<Instance name="Helico:1" uid="Helico:1" entityUid="Helico.ipt_{82657759-4F45-4611-5795-CEBE3F29F6BE}">
+<Transform>
+<Rotation>0.98699636783739286 -0.16074255776176427 6.0390142279951062e-16 1.0695751827801884e-15 2.8104902897159935e-15 -1 0.16074255776176438 0.98699636783739275 2.9458699583905418e-15</Rotation>
+<Translation>21.229277107104448 -8.1998966227561123 47.950000000000223</Translation>
+</Transform>
+</Instance>
+<Instance name="garra:1" uid="garra:1" entityUid="garra.ipt_{40509759-4640-86F3-E58B-B09D4B2C3D3E}">
+<Transform>
+<Rotation>-0.28169114973031756 0.26870074265067767 0.92111346047193743 -0.15599533192115159 -0.96004097741077887 0.23235055005522651 0.94673943225283552 -0.078238306417831957 0.31235110825231305</Rotation>
+<Translation>44.387352814927482 1.494732522491361 -0.77635615997132879</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+<Joints>
+<Revolute name="De rotación:1">
+<BaseFrame>
+<InstancePath>
+<Uid>Base:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.95105651629515253 0.30901699437495089 0 0.30901699437495089 0.95105651629515253 -2.1694024351640001e-16 -1.340764440208143e-16 -1.8454039351131378e-16 -1</Rotation>
+<Translation>2.1837744350095702 -5.3837415471467907 20.5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Cintura:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 0 0 0 0 -1 0 1 0</Rotation>
+<Translation>11.4 -1 10</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:2">
+<BaseFrame>
+<InstancePath>
+<Uid>Cintura:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>3.3042351923367578e-15 -1 0 -1 -3.3042351923367578e-15 0 0 0 -1</Rotation>
+<Translation>11.4 14.200000000000001 0.5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-5.4659559706687372e-15 -1 -3.1893448078649242e-16 1 -5.4659559706687372e-15 -2.1310847646245745e-16 2.131084764624557e-16 -3.189344807864936e-16 1</Rotation>
+<Translation>11 -3.8639196999971492e-13 17.999999999999993</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:3">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon1:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-4.5519144009631418e-15 1 -2.4982387730654077e-15 1 4.5519144009631402e-15 -4.983296627756997e-16 -4.9832966277568836e-16 -2.4982387730654101e-15 -1</Rotation>
+<Translation>-11 8.143775704136751e-14 2.7478019859472599e-14</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-1 -5.4123372450476397e-15 0 5.4123372450476397e-15 -1 0 0 0 1</Rotation>
+<Translation>-11 4.8459500301412106e-15 -8.6736173798840404e-16</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:4">
+<BaseFrame>
+<InstancePath>
+<Uid>Helico:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-3.5648567431323406e-16 0.16074255776175991 0.98699636783739353 0 0.98699636783739353 -0.16074255776175991 -1 -1.4547895624908945e-16 -3.3748960547352526e-16</Rotation>
+<Translation>0.49349818391857347 -0.080371278880858307 -9.5</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>garra:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>-0.94673943225283641 -0.15599533192115378 -0.28169114973031434 0.078238306417835093 -0.96004097741077876 0.26870074265067762 -0.31235110825230999 0.23235055005522542 0.92111346047193776</Rotation>
+<Translation>52.544103401568606 -9.7136573987596293 -5.6961493641591607</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+<Revolute name="De rotación:5">
+<BaseFrame>
+<InstancePath>
+<Uid>Eslabon2:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>1 5.4123372450476397e-15 0 -5.4123372450476397e-15 1 0 0 0 1</Rotation>
+<Translation>11 9.5924495603120505e-15 -17.000000000000401</Translation>
+</Transform>
+</BaseFrame>
+<FollowerFrame>
+<InstancePath>
+<Uid>Helico:1</Uid>
+</InstancePath>
+<Transform>
+<Rotation>0.98699636783739353 0.16074255776175991 2.4814582882646238e-16 -0.16074255776175991 0.98699636783739353 0 -2.370437666126979e-16 0 1</Rotation>
+<Translation>-1.48049455175622 0.24111383664264802 -18</Translation>
+</Transform>
+</FollowerFrame>
+</Revolute>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base.ipt" uid="Base.ipt_{4DB48909-460F-B737-7D26-97AC40A842AC}" version="{BBB6B927-8D45-77B7-26C0-86D33143A8A7}">
+<PartFile name="Base.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>6.0836759827012346</Mass>
+<CenterOfMass>2.1784928407471016 -5.4064466886286295 7.5064145883867432</CenterOfMass>
+<Inertia>372.19079848285838 372.16488884459051 322.35118477689065 -1.1059318411563581 -0.25725817502239079 -0.0063718663163162999</Inertia>
+</MassProperties>
+<GeometryFile name="Base_ipt_476bdd53.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Cintura.ipt" uid="Cintura.ipt_{E5EE0E65-44FC-9D45-B3ED-8DBE818816AE}" version="{25CB7F5A-3B05-E4F7-D1C4-FF2C0195F394}">
+<PartFile name="Cintura.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.76185925144389632</Mass>
+<CenterOfMass>7.4697510831757521 5.4538245247422452 9.9999999999992752</CenterOfMass>
+<Inertia>62.572299618801274 80.6416030139236 57.522364768735045 -3.7180143408477307e-12 3.2814568839967252e-12 9.9015343710910901</Inertia>
+</MassProperties>
+<GeometryFile name="Cintura_ipt_2622114e.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon1.ipt" uid="Eslabon1.ipt_{54F1D12B-4C37-9790-92B0-149A98EAF21A}" version="{B562D08F-B22F-0DC2-168E-6D9A3FC6EAAC}">
+<PartFile name="Eslabon1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.7603253810911591</Mass>
+<CenterOfMass>3.1320479404847563 0.96208809832388098 8.500000000000119</CenterOfMass>
+<Inertia>44.549142133876451 78.970780847133256 40.904099647404493 9.8984855867456639e-11 -3.1679155654273925e-10 2.3581519448708272</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon1_ipt_22798c7e.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eslabon2.ipt" uid="Eslabon2.ipt_{A0A173B1-403E-DCE0-612C-CC95C21C703D}" version="{E68D366F-1338-2731-BCA3-262A2006DA18}">
+<PartFile name="Eslabon2.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.62162592073545875</Mass>
+<CenterOfMass>-3.6804518177426622 0.66720190739476248 -8.500000000000524</CenterOfMass>
+<Inertia>31.970242677570205 60.608277909273546 32.492764222439291 -4.8116817197296769e-11 -1.708540366962552e-10 -1.2037388018165038</Inertia>
+</MassProperties>
+<GeometryFile name="Eslabon2_ipt_2ec927c1.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="garra.ipt" uid="garra.ipt_{40509759-4640-86F3-E58B-B09D4B2C3D3E}" version="{43F054EA-CB6D-83C5-3F8D-65E8983C8C6D}">
+<PartFile name="garra.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.12675730981939107</Mass>
+<CenterOfMass>51.296777835487418 -8.5270384325184612 -1.6009143872126266</CenterOfMass>
+<Inertia>2.1471165699773684 1.3514042828811217 1.2249775889632293 -0.078906652307550978 0.3304902397581827 -0.050152041121407823</Inertia>
+</MassProperties>
+<GeometryFile name="garra_ipt_b14e9efb.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Helico.ipt" uid="Helico.ipt_{82657759-4F45-4611-5795-CEBE3F29F6BE}" version="{BC054153-57D6-2252-35CA-C5DA2E24DDD5}">
+<PartFile name="Helico.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.23656761302302778</Mass>
+<CenterOfMass>-2.6895168312696165 0.43801555641396495 -9.4999999550941343</CenterOfMass>
+<Inertia>6.4907632094448964 8.1942444482540449 2.2940925028028407 1.2035549957545299e-08 -2.6855987016460859e-08 0.28498846030291641</Inertia>
+</MassProperties>
+<GeometryFile name="Helico_ipt_13e29da2.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
