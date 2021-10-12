@@ -17,7 +17,7 @@ syms z01 theta01 theta12 z23 theta23 x34 theta34 x4P theta4P
 
 T01 = Tij(0,0,z01,0,0,theta01);
 T12 = Tij(0,0,0,0,theta12,0);
-T23 = Tij(0,0,z23,0,0,theta23);
+T23 = Tij(0,0,z23,0,theta23,0);
 T34 = Tij(x34,0,0,0,theta34,0);
 T4P = Tij(x4P,0,0,theta4P,0,0);
 
