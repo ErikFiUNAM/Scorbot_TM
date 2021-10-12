@@ -1,0 +1,54 @@
+%Definición de trayectoria
+
+%Posición y orientación inical
+
+xp_inicial = 0.1;  %m
+yp_inicial = 0.1;  %m
+zp_inicial = 0.1;  %m
+
+
+
+%Posición y orientación final
+xp_final =0.32;  %m
+yp_final = -0.05;  %m
+zp_final = -0.25;  %m
+
+
+%Trayectoria
+
+t_total = 10; %s
+t_muestreo = 0.1; %s
+t_sim = 0:t_muestreo:t_total; %arreglo del tiempo
+
+%Puntos de la trayectoria
+xp = xp_inicial+((10/t_total^3)*t_sim.^3-(15/t_total^4)*t_sim.^4+(6/t_total^5)*t_sim.^5)*(xp_final-xp_inicial);
+yp = yp_inicial+((10/t_total^3)*t_sim.^3-(15/t_total^4)*t_sim.^4+(6/t_total^5)*t_sim.^5)*(yp_final-yp_inicial);
+zp = zp_inicial+((10/t_total^3)*t_sim.^3-(15/t_total^4)*t_sim.^4+(6/t_total^5)*t_sim.^5)*(zp_final-zp_inicial);
+
+figure
+plot3(xp,yp,zp)
+title('Trayectoria')
+xlabel('x')
+ylabel('y')
+zlabel('z')
+grid on
+
+%%%%%Cálculo de las xy del sistema 3
+
+Lpinza = 0.15;
+
+x4 = xp;
+y4 = yp;
+z4 = zp-Lpinza;
+
+figure 
+plot3(x4,y4,z4,'--')
+title('Trayectoria del sistema {4}')
+xlabel('x4')
+ylabel('y4')
+zlabel('z4')
+gir
+% %%%Fin del diseño de trayectorias
+% 
+% 
+
