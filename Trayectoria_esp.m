@@ -4,14 +4,13 @@
 
 xp_inicial = 0.1;  %m
 yp_inicial = 0.1;  %m
-zp_inicial = 0.1;  %m
-
+zp_inicial = 0.25;  %m
 
 
 %Posición y orientación final
 xp_final =0.32;  %m
-yp_final = -0.05;  %m
-zp_final = -0.25;  %m
+yp_final = -0.30;  %m
+zp_final = 0.15;  %m
 
 
 %Trayectoria
